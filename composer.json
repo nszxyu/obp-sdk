@@ -1,0 +1,25 @@
+{
+    "name": "nszxyu/obp-sdk",
+    "description": "OBP接口的sdk",
+    "type": "library",
+    "require": {
+        "php": "^7.3",
+        "ext-curl": "*",
+        "ext-openssl": "*",
+        "ext-gmp": "*",
+        "mdanter/ecc": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xyz\\Obp\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nszxyu",
+            "email": "nszxyu@163.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
