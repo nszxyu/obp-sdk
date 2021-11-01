@@ -43,7 +43,7 @@ class ObpSdk{
         $response = new PublicResponse($resData, $this->config);
         $response->verifySign();
         $response->decrypt();
-        echo $response->get('responseMsg').PHP_EOL;
+        
 //        if(!$response->isSuccess()){
 //            throw new ObpException($response->responseMsg, $response->responseCode);
 //        }
