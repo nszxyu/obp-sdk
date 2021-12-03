@@ -60,6 +60,14 @@ class PublicResponse
     }
 
     /**
+     * @return array
+     */
+    public function toArray(): array
+    {
+        return $this->data;
+    }
+
+    /**
      * @param $key
      * @param string $default
      * @return bool|mixed|string

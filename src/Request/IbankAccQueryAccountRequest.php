@@ -5,6 +5,9 @@ namespace Xyz\Obp\Request;
 use Xyz\Obp\Request\Traits\WithBusinessNo;
 use Xyz\Obp\Request\Traits\WithInstance;
 
+/**
+ * 查询账号信息请求参数
+ */
 class IbankAccQueryAccountRequest extends PublicRequest
 {
     use WithBusinessNo, WithInstance;
