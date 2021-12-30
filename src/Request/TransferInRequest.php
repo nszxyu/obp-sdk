@@ -10,7 +10,7 @@ use Xyz\Obp\Request\Traits\WithOtp;
 /**
  * 充值
  */
-class CommonTransferInRequest extends PublicRequest
+class TransferInRequest extends PublicRequest
 {
     use WithBusinessNo, WithInstance, WithIdNo, WithOtp;
 
@@ -21,7 +21,7 @@ class CommonTransferInRequest extends PublicRequest
      * @param $thirdId
      * @return $this
      */
-    public function thirdId($thirdId): CommonTransferInRequest
+    public function thirdId($thirdId): TransferInRequest
     {
         $this->paramsData['thirdId'] = $thirdId;
         return $this;
@@ -34,7 +34,7 @@ class CommonTransferInRequest extends PublicRequest
      * @param $mobileNo
      * @return $this
      */
-    public function mobileNo($mobileNo): CommonTransferInRequest
+    public function mobileNo($mobileNo): TransferInRequest
     {
         $this->paramsData['mobileNo'] = $mobileNo;
         return $this;
@@ -46,7 +46,7 @@ class CommonTransferInRequest extends PublicRequest
      * @param $trueName
      * @return $this
      */
-    public function trueName($trueName): CommonTransferInRequest
+    public function trueName($trueName): TransferInRequest
     {
         $this->paramsData['trueName'] = $trueName;
         return $this;
@@ -58,7 +58,7 @@ class CommonTransferInRequest extends PublicRequest
      * @param $fromAccNo
      * @return $this
      */
-    public function fromAccNo($fromAccNo): CommonTransferInRequest
+    public function fromAccNo($fromAccNo): TransferInRequest
     {
         $this->paramsData['fromAccNo'] = $fromAccNo;
         return $this;
@@ -70,7 +70,7 @@ class CommonTransferInRequest extends PublicRequest
      * @param $toAccNo
      * @return $this
      */
-    public function toAccNo($toAccNo): CommonTransferInRequest
+    public function toAccNo($toAccNo): TransferInRequest
     {
         $this->paramsData['toAccNo'] = $toAccNo;
         return $this;
@@ -82,7 +82,7 @@ class CommonTransferInRequest extends PublicRequest
      * @param $transAmt
      * @return $this
      */
-    public function transAmt($transAmt): CommonTransferInRequest
+    public function transAmt($transAmt): TransferInRequest
     {
         $this->paramsData['transAmt'] = $transAmt;
         return $this;
@@ -94,7 +94,7 @@ class CommonTransferInRequest extends PublicRequest
      * @param $transChannelType
      * @return $this
      */
-    public function transChannelType($transChannelType): CommonTransferInRequest
+    public function transChannelType($transChannelType): TransferInRequest
     {
         $this->paramsData['transChannelType'] = $transChannelType;
         return $this;
@@ -106,7 +106,7 @@ class CommonTransferInRequest extends PublicRequest
      * @param $transRemark
      * @return $this
      */
-    public function transRemark($transRemark): CommonTransferInRequest
+    public function transRemark($transRemark): TransferInRequest
     {
         $this->paramsData['transRemark'] = $transRemark;
         return $this;

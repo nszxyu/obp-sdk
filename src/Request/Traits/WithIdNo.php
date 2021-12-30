@@ -2,7 +2,7 @@
 
 namespace Xyz\Obp\Request\Traits;
 
-use Xyz\Obp\Request\CommonTransferInRequest;
+use Xyz\Obp\Request\TransferInRequest;
 
 trait WithIdNo
 {
@@ -12,7 +12,7 @@ trait WithIdNo
      * @param $idNo
      * @return $this
      */
-    public function idNo($idNo): CommonTransferInRequest
+    public function idNo($idNo): TransferInRequest
     {
         $this->paramsData['idNo'] = $idNo;
         return $this;
@@ -24,7 +24,7 @@ trait WithIdNo
      * @param $idType
      * @return $this
      */
-    public function idType($idType): CommonTransferInRequest
+    public function idType($idType): TransferInRequest
     {
         $this->paramsData['idType'] = $idType;
         return $this;

@@ -166,5 +166,31 @@ class PublicRequest
              .str_pad(rand(0, 999), 3, "0", STR_PAD_LEFT);
     }
 
+    /**
+     * 获取值
+     * @param $key
+     * @param mixed $default
+     * @return mixed|string
+     */
+    public function getValue($key, $default = ''){
+        return ($this->paramsData[$key] ?? $default);
+    }
+
+    public function __set($name, $value)
+    {
+        $this->paramsData[$name] = $value;
+    }
+
+    public function __get($name)
+    {
+        return $this->getValue($name);
+    }
+
+    public function __call($name, $arguments)
+    {
+        $this->paramsData[$name] = $arguments[0] ?? '';
+        return $this;
+    }
+
 
 }

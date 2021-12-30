@@ -58,14 +58,14 @@ class IbankAccQueryAccountRequest extends PublicRequest
         return $this;
     }
 
-    /**
-     * 证件类型
-     * @param string $type
-     * @return $this
-     */
-    public function idType(string $type = '1'): IbankAccQueryAccountRequest
-    {
-        $this->paramsData['idType'] = $type;
-        return $this;
-    }
+//    /**
+//     * 证件类型
+//     * @param string $type
+//     * @return $this
+//     */
+//    public function idType(string $type = '1'): IbankAccQueryAccountRequest
+//    {
+//        $this->paramsData['idType'] = $type;
+//        return $this;
+//    }
 }
