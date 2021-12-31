@@ -12,7 +12,7 @@ trait WithIdNo
      * @param $idNo
      * @return $this
      */
-    public function idNo($idNo): TransferInRequest
+    public function idNo($idNo)
     {
         $this->paramsData['idNo'] = $idNo;
         return $this;
@@ -24,7 +24,7 @@ trait WithIdNo
      * @param $idType
      * @return $this
      */
-    public function idType($idType): TransferInRequest
+    public function idType($idType)
     {
         $this->paramsData['idType'] = $idType;
         return $this;
